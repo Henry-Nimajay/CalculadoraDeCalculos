@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Manual de usuario — Calculadora Científica</title>
+<style>
+  body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 24px;
+    background: #f4f6fa;
+    color: #222;
+    line-height: 1.6;
+  }
+  header {
+    background: linear-gradient(90deg, #2a5298, #1e3c72);
+    color: #fff;
+    padding: 18px 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 28px;
+    border-bottom: 2px solid #dfe3eb;
+    padding-bottom: 6px;
+  }
+  code, kbd {
+    background: #eef2f7;
+    border: 1px solid #d8dee9;
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-family: Consolas, Monaco, monospace;
+  }
+  .tip {
+    background: #eefaf1;
+    border-left: 4px solid #34c759;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .keys kbd {
+    margin-right: 6px;
+  }
+  ul {
+    margin-top: 6px;
+  }
+  footer {
+    margin-top: 40px;
+    padding-top: 12px;
+    border-top: 2px solid #dfe3eb;
+    font-size: 14px;
+    color: #555;
+  }
+  footer .names {
+    margin-top: 8px;
+    padding-left: 10px;
+  }
+  .highlight {
+    background: #fffbe6;
+    border-left: 4px solid #ffcc00;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Manual de Usuario — Calculadora Científica</h1>
+  <p>Proyecto universitario de cálculo simbólico y numérico.</p>
+</header>
+
+<div class="tip">
+  💡 Consejo: puedes alternar entre editor y vista previa con <kbd>F4</kbd>.
+</div>
+
+<h2>Operaciones soportadas</h2>
+<ul>
+  <li><b>Cálculo básico:</b> +, −, *, /, potencias <code>^</code>, raíces <code>√( )</code>, constantes <code>π</code>, <code>e</code>.</li>
+  <li><b>Trigonometría:</b> <code>sin</code>, <code>cos</code>, <code>tan</code>.</li>
+  <li><b>Logaritmos:</b> <code>log10</code>, <code>ln</code>, <code>exp</code>, <code>abs</code>.</li>
+  <li><b>Derivadas:</b> botón <i>Derivar</i> o <span class="keys"><kbd>Ctrl</kbd><kbd>D</kbd></span>, luego presiona <kbd>=</kbd>.</li>
+  <li><b>Integral indefinida:</b> botón <i>Integral indef.</i> o <span class="keys"><kbd>Ctrl</kbd><kbd>I</kbd></span>, luego <kbd>=</kbd>.</li>
+  <li><b>Integral definida:</b> llena <b>a</b> y <b>b</b> y pulsa <i>∫ a→b</i> o <kbd>Enter</kbd> en los campos.</li>
+</ul>
+
+<h2>Selector de variable</h2>
+<p>Elige <b>x</b> o <b>y</b> desde el menú desplegable <b>Variable</b> según la variable de integración o derivación.</p>
+
+<h2>Atajos útiles</h2>
+<ul>
+  <li><kbd>Enter</kbd> — calcular.</li>
+  <li><kbd>Esc</kbd> o botón <i>CLR</i> — limpiar pantalla.</li>
+  <li><kbd>F4</kbd> — alternar entre editor y vista previa.</li>
+  <li><kbd>Ctrl</kbd> + <kbd>D</kbd> — modo derivada.</li>
+  <li><kbd>Ctrl</kbd> + <kbd>I</kbd> — modo integral indefinida.</li>
+</ul>
+
+<h2>Ejemplos rápidos</h2>
+<div class="highlight">
+  <ul>
+    <li><code>sin(x)^2 + cos(x)^2</code> → <b>1</b></li>
+    <li><code>d/dx (ln(x^2 + 1))</code> → <b>2x / (x² + 1)</b></li>
+    <li><code>∫ x^2 dx</code> → <b>x³/3 + C</b></li>
+    <li><code>∫[0,1] (3x^2) dx</code> → <b>1</b></li>
+  </ul>
+</div>
+
+<h2>Historial</h2>
+<p>
+  El botón <i>Historial</i> permite consultar los cálculos previos.
+  Puedes hacer clic en cualquier línea para volver a cargar esa expresión en la pantalla principal.
+</p>
+
+<h2>Notas adicionales</h2>
+<ul>
+  <li>La calculadora usa el motor simbólico <b>Symja</b> y <b>Apache Commons Math</b> para cálculos numéricos precisos.</li>
+  <li>El diseño está basado en Swing (JFrame Form) y se programó con arquitectura orientada a objetos.</li>
+</ul>
+
+<footer>
+  <strong>Desarrollado por:</strong>
+  <div class="names">
+    <ul>
+      <li><b>URIEL</b> — Lógica de cálculo y simbología.</li>
+      <li><b>HENRY</b> — Diseño de interfaz (JForm / Swing).</li>
+      <li><b>SANTIAGO</b> — Integración, pruebas y documentación.</li>
+    </ul>
+  </div>
+  <p style="margin-top:10px;">Universidad — Facultad de Ingeniería, 2025.</p>
+</footer>
+
+</body>
+</html>
